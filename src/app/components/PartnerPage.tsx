@@ -25,7 +25,7 @@ export function PartnerPage() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-8"
+          className="sticky top-20 z-30 mb-8 bg-white/80 backdrop-blur-md py-4 -mx-4 px-4 rounded-lg"
         >
           <Link
             to="/"
@@ -561,9 +561,9 @@ export function PartnerPage() {
           transition={{ duration: 0.8 }}
           className="text-center border-t border-gray-200 pt-12"
         >
-            <h2 className="text-2xl md:text-3xl mb-4">
-              Prodalign Partner isn't about speed or scale.
-            </h2>
+          <h2 className="text-2xl md:text-3xl mb-4">
+            Prodalign Partner isn't about speed or scale.
+          </h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
             It's about building trust, slowly and deliberately. If your company
             values thoughtful execution and long-term talent growth, we're open

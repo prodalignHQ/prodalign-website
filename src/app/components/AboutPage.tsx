@@ -24,7 +24,7 @@ export function AboutPage() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-8"
+          className="sticky top-20 z-30 mb-8 bg-white/80 backdrop-blur-md py-4 -mx-4 px-4 rounded-lg"
         >
           <Link
             to="/"

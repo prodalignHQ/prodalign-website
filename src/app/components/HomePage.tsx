@@ -89,68 +89,10 @@ export function HomePage() {
         </motion.div>
       </section>
 
-      {/* Capability States Section */}
-      <section className="py-24 px-6 lg:px-12 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl mb-6">
-              People don't start at the same place. And that's okay.
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              These are working states, not identities. People move between
-              them. No state is better than another.
-            </p>
-          </motion.div>
 
-          {/* Capability States */}
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Layers,
-                title: "Execution-Focused",
-                desc: "People who currently work best with clear direction, structure, and defined tasks.",
-              },
-              {
-                icon: Users,
-                title: "Systems-Focused",
-                desc: "People who enjoy working on defined problems and improving systems over time.",
-              },
-              {
-                icon: Lightbulb,
-                title: "Outcome-Focused",
-                desc: "People who naturally think in terms of products, outcomes, and long-term direction.",
-              },
-            ].map((state, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{
-                  delay: index * 0.15,
-                  duration: 0.8,
-                }}
-                className="bg-white p-8 rounded-lg border border-gray-200"
-              >
-                <div className="w-12 h-12 mb-4 rounded-full bg-gray-100 flex items-center justify-center">
-                  <state.icon className="w-6 h-6 text-gray-700" />
-                </div>
-                <h3 className="text-2xl mb-3">{state.title}</h3>
-                <p className="text-gray-600">{state.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* How Prodalign Works - Layered System */}
-      <section className="py-24 px-6 lg:px-12">
+      <section className="py-24 px-6 lg:px-12 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 40 }}

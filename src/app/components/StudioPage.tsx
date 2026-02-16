@@ -22,7 +22,7 @@ export function StudioPage() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-8"
+          className="sticky top-20 z-30 mb-8 bg-white/80 backdrop-blur-md py-4 -mx-4 px-4 rounded-lg"
         >
           <Link
             to="/"
@@ -39,7 +39,7 @@ export function StudioPage() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-16"
+          className="mb-16 "
         >
           <h1 className="mb-4 text-5xl md:text-6xl lg:text-7xl">Prodalign Studio</h1>
           <p className="text-xl text-gray-500 mb-6">
@@ -98,7 +98,7 @@ export function StudioPage() {
           <div className="bg-white border-2 border-gray-200 rounded-lg p-8 md:p-10 mb-8">
             <p className="text-xl text-gray-700 mb-6">
               A program where students work together in small
-              teams to Studio real products over an extended
+              teams to build real products over an extended
               period of time.
             </p>
             <p className="text-gray-600 mb-6">
