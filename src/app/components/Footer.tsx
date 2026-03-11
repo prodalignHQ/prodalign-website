@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Mail } from "lucide-react";
-import imgShip from "figma:asset/ed4ca6a6327363eabfafb2082120fc537cbad4d3.png";
 
 export function Footer() {
   return (
@@ -9,9 +8,12 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Logo & Contact */}
           <div className="md:col-span-2">
-            <Link to="/" className="inline-flex flex-col items-center gap-2 mb-6">
+            <Link
+              to="/"
+              className="inline-flex flex-col items-center gap-2 mb-6"
+            >
               <img
-                src={imgShip}
+                src="/prodalign-ship.png"
                 alt="Prodalign"
                 className="h-12 object-contain"
               />
@@ -19,7 +21,7 @@ export function Footer() {
                 Prodalign
               </span>
             </Link>
-            <div className="flex items-center gap-2 text-gray-600">
+            {/* <div className="flex items-center gap-2 text-gray-600">
               <Mail className="w-4 h-4" />
               <a
                 href="mailto:talk@prodalign.com"
@@ -27,7 +29,7 @@ export function Footer() {
               >
                 talk@prodalign.com
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Sitemap - Main */}
@@ -67,15 +69,15 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  to="/training"
+                  to="/studio"
                   className="text-gray-600 hover:text-[#FC7802] transition-colors"
                 >
-                  Prodalign Build
+                  Prodalign Studio
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/building"
+                  to="/board"
                   className="text-gray-600 hover:text-[#FC7802] transition-colors"
                 >
                   Prodalign Board
@@ -83,7 +85,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  to="/hiring"
+                  to="/partner"
                   className="text-gray-600 hover:text-[#FC7802] transition-colors"
                 >
                   Prodalign Partner

@@ -10,7 +10,7 @@ import {
   XCircle,
 } from "lucide-react";
 
-export function TrainingPage() {
+export function StudioPage() {
   const location = useLocation();
   const savedScrollY = location.state?.scrollY;
 
@@ -22,7 +22,7 @@ export function TrainingPage() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-8"
+          className="sticky top-28 md:top-20 z-30 mb-8 bg-white/80 backdrop-blur-md py-4 -mx-4 px-4 rounded-lg"
         >
           <Link
             to="/"
@@ -39,16 +39,16 @@ export function TrainingPage() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-16"
+          className="mb-16 "
         >
-          <h1 className="mb-4 text-4xl">Prodalign Build</h1>
+          <h1 className="mb-4 text-5xl md:text-6xl lg:text-7xl">Prodalign Studio</h1>
           <p className="text-xl text-gray-500 mb-6">
             The foundation of the Prodalign ecosystem
           </p>
 
           <div className="max-w-3xl">
             <p className="text-gray-700">
-              Build exists to help students move beyond
+              Studio exists to help students move beyond
               micro-projects and develop the depth, context, and
               patience that real work requires.
             </p>
@@ -67,7 +67,7 @@ export function TrainingPage() {
             <div className="text-4xl mb-4">📚</div>
             <h3 className="text-xl mb-3">Not a classroom</h3>
             <p className="text-gray-600">
-              Build operates like a startup. You work on one or
+              Studio operates like a startup. You work on one or
               two problem statements and stay with them long
               enough to understand the domain.
             </p>
@@ -83,7 +83,7 @@ export function TrainingPage() {
           </div>
         </motion.div>
 
-        {/* What is Prodalign Build? */}
+        {/* What is Prodalign Studio? */}
         <motion.section
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -91,8 +91,8 @@ export function TrainingPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-8">
-            What is Prodalign Build?
+          <h2 className="text-3xl md:text-4xl mb-8">
+            What is Prodalign Studio?
           </h2>
 
           <div className="bg-white border-2 border-gray-200 rounded-lg p-8 md:p-10 mb-8">
@@ -102,7 +102,7 @@ export function TrainingPage() {
               period of time.
             </p>
             <p className="text-gray-600 mb-6">
-              The focus is not on finishing fast—it's on
+              The focus is not on finishing fast. It's on
               learning how real work unfolds:
             </p>
             <div className="grid md:grid-cols-2 gap-4">
@@ -136,14 +136,13 @@ export function TrainingPage() {
           <div className="bg-[#FC7802]/5 border-l-4 border-[#FC7802] p-6 rounded-r-lg">
             <p className="text-gray-700">
               While primarily designed for students interested
-              in software engineering, Build intentionally
-              exposes participants to other roles—product
+              in software engineering, Studio intentionally
+              exposes participants to other roles such as product
               design, product management, sales, marketing, and
               content.
             </p>
             <p className="text-gray-600 mt-3 italic">
-              Not because you need to master everything, but
-              because real companies don't operate in silos.
+              You don't need to know it all. Understanding adjacent roles helps you find where you truly belong.
             </p>
           </div>
         </motion.section>
@@ -156,8 +155,8 @@ export function TrainingPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-8">
-            Who is Prodalign Build for?
+          <h2 className="text-3xl md:text-4xl mb-8">
+            Who is Prodalign Studio for?
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -218,7 +217,7 @@ export function TrainingPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-8">
+          <h2 className="text-3xl md:text-4xl mb-8">
             What we expect from you
           </h2>
 
@@ -269,7 +268,7 @@ export function TrainingPage() {
                   </h3>
                   <p className="text-gray-600">
                     This structure is intentional. We're
-                    building consistency, rhythm, and ownership.
+                    Building consistency, rhythm, and ownership.
                   </p>
                 </div>
               </div>
@@ -338,8 +337,7 @@ export function TrainingPage() {
                   </div>
                 </div>
                 <p className="text-gray-600 italic pt-4">
-                  If you're unsure whether you're "good
-                  enough"—that's often a good reason to try.
+                  If you're unsure whether you're "good enough", that's often a good reason to try.
                 </p>
               </div>
             </div>
@@ -354,8 +352,8 @@ export function TrainingPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-12">
-            How Prodalign Build works
+          <h2 className="text-3xl md:text-4xl mb-12">
+            How Prodalign Studio works
           </h2>
 
           <div className="space-y-8">
@@ -388,13 +386,13 @@ export function TrainingPage() {
                     <div className="flex items-center gap-2">
                       <Users className="w-4 h-4 text-gray-400" />
                       <span className="text-gray-600">
-                        Problem-solving oriented thinkers
+                        System-focused doers
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Users className="w-4 h-4 text-gray-400" />
                       <span className="text-gray-600">
-                        Vision-oriented leaders
+                        Outcome-focused thinkers
                       </span>
                     </div>
                   </div>
@@ -462,7 +460,7 @@ export function TrainingPage() {
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl mb-3">
-                  Before building begins
+                  Before Building begins
                 </h3>
                 <p className="text-gray-700 mb-4">
                   Before any code is written, mentors spend time
@@ -538,7 +536,7 @@ export function TrainingPage() {
                   </div>
                 </div>
                 <p className="text-gray-700 mt-6 text-center italic">
-                  The goal is steady progress—not pressure.
+                  The goal is steady progress, not pressure to cross an imaginary finish line.
                 </p>
               </div>
             </div>
@@ -553,8 +551,8 @@ export function TrainingPage() {
           transition={{ duration: 0.8 }}
           className="mb-24 bg-gray-50 p-10 md:p-12 rounded-lg"
         >
-          <h2 className="text-4xl mb-8">
-            What you gain from Build
+          <h2 className="text-3xl md:text-4xl mb-8">
+            What you gain from Studio
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -628,14 +626,14 @@ export function TrainingPage() {
           className="mb-24"
         >
           <div className="border-2 border-gray-300 p-10 md:p-12 rounded-lg">
-            <h2 className="text-4xl mb-8">
+            <h2 className="text-3xl md:text-4xl mb-8">
               This isn't for everyone
             </h2>
 
             <div className="space-y-8">
               <div>
                 <p className="text-xl text-gray-700 mb-4">
-                  Prodalign Build isn't a shortcut. It doesn't
+                  Prodalign Studio isn't a shortcut. It doesn't
                   promise guaranteed jobs or instant results.
                 </p>
               </div>
@@ -664,10 +662,10 @@ export function TrainingPage() {
               </div>
 
               <div className="pt-6 border-t border-gray-200">
-                <p className="text-xl text-gray-900 max-w-3xl">
+                <p className="text-lg text-gray-900 max-w-3xl">
                   But if you're willing to show up consistently,
                   learn through practice, and grow over
-                  time—Build gives you a foundation most
+                  time, Studio gives you a foundation most
                   students never get.
                 </p>
               </div>
@@ -683,11 +681,11 @@ export function TrainingPage() {
           transition={{ duration: 0.8 }}
           className="text-center border-t-2 border-gray-200 pt-16"
         >
-          <h2 className="text-4xl mb-6">Ready to explore?</h2>
+          <h2 className="text-3xl md:text-4xl mb-6">Ready to explore?</h2>
           <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
             Whether you're a student trying to understand real
             work, a company exploring collaboration, or someone
-            building long-term—we're open to a conversation.
+            Building long-term, drop a note!
           </p>
           <Link
             to="/contact"

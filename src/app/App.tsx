@@ -5,9 +5,9 @@ import { Footer } from './components/Footer';
 import { HomePage } from './components/HomePage';
 import { AboutPage } from './components/AboutPage';
 import { ContactPage } from './components/ContactPage';
-import { TrainingPage } from './components/TrainingPage';
-import { HiringPage } from './components/HiringPage';
-import { BuildingPage } from './components/BuildingPage';
+import { StudioPage } from './components/StudioPage';
+import { PartnerPage } from './components/PartnerPage';
+import { BoardPage } from './components/BoardPage';
 
 export default function App() {
   return (
@@ -20,9 +20,9 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/training" element={<TrainingPage />} />
-            <Route path="/hiring" element={<HiringPage />} />
-            <Route path="/building" element={<BuildingPage />} />
+            <Route path="/studio" element={<StudioPage />} />
+            <Route path="/partner" element={<PartnerPage />} />
+            <Route path="/board" element={<BoardPage />} />
           </Routes>
         </main>
         <Footer />

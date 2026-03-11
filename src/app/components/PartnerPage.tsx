@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import {
   ArrowRight,
   ArrowLeft,
-  Building2,
   Users,
   Clock,
   FileText,
@@ -11,12 +10,10 @@ import {
   XCircle,
   TrendingUp,
   Code,
-  Search,
-  Wrench,
   Shield,
 } from "lucide-react";
 
-export function HiringPage() {
+export function PartnerPage() {
   const location = useLocation();
   const savedScrollY = location.state?.scrollY;
 
@@ -28,7 +25,7 @@ export function HiringPage() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-8"
+          className="sticky top-28 md:top-20 z-30 mb-8 bg-white/80 backdrop-blur-md py-4 -mx-4 px-4 rounded-lg"
         >
           <Link
             to="/"
@@ -47,16 +44,16 @@ export function HiringPage() {
           transition={{ duration: 0.8 }}
           className="mb-16"
         >
-          <h1 className="mb-4 text-4xl">Prodalign Partner</h1>
+          <h1 className="mb-4 text-5xl md:text-6xl lg:text-7xl">Prodalign Partner</h1>
           <p className="text-xl text-gray-500 mb-6">
-            A structured way for companies to collaborate with student
-            teams—guided, mentored, and low risk
+            A structured way for companies to collaborate with student teams.
+            Guided, mentored, and low risk
           </p>
 
           <div className="max-w-3xl">
             <p className="text-gray-700">
-              Partner connects real company problems with developing
-              talent, without forcing hiring or compromising quality.
+              Partner connects real company problems with developing talent,
+              without forcing hiring or compromising quality.
             </p>
           </div>
         </motion.div>
@@ -73,18 +70,18 @@ export function HiringPage() {
             <div className="text-4xl mb-4">🤝</div>
             <h3 className="text-xl mb-3">Not outsourcing</h3>
             <p className="text-gray-600">
-              This is a mentored collaboration model. Prodalign forms,
-              trains, and oversees student teams—companies don't manage
-              them directly.
+              This is a mentored collaboration model. Prodalign forms, trains,
+              and oversees student teams. Companies don't need to manage them
+              directly.
             </p>
           </div>
           <div className="bg-gray-50 p-8 rounded-lg">
             <div className="text-4xl mb-4">🎯</div>
-            <h3 className="text-xl mb-3">Learning-first</h3>
+            <h3 className="text-xl mb-3">Low-risk collaboration</h3>
             <p className="text-gray-600">
-              Ideal for exploratory, non-critical work. Companies get
-              meaningful output. Students gain real-world discipline.
-              Hiring remains optional.
+              Ideal for exploratory, non-critical work. Companies get meaningful
+              output. Students gain real-world discipline. Hiring remains
+              optional.
             </p>
           </div>
         </motion.div>
@@ -97,26 +94,24 @@ export function HiringPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-8">What is a Prodalign Partner?</h2>
+          <h2 className="text-3xl md:text-4xl mb-8">What is a Prodalign Partner?</h2>
 
           <div className="bg-white border-2 border-gray-200 rounded-lg p-8 md:p-10 mb-8">
-            <p className="text-xl text-gray-700 mb-6">
-              Prodalign Partner is a collaboration model where companies
-              offload <strong>non-critical, exploratory, or long-term
-              work</strong> to student teams—without treating it like
-              outsourcing.
+            <p className="text text-gray-700 mb-6">
+              Prodalign Partner is a collaboration model where companies provide
+              a curated domain-specific problem statement to student teams to
+              work on.
+            </p>
+            <p className="text text-gray-700 mb-6">
+              Prodalign forms, trains, and mentors a dedicated team of students
+              within a college. This team works as an external engineering
+              group, supported closely by Prodalign mentors to ensure structure,
+              learning, and delivery.
             </p>
 
             <div className="space-y-4 text-gray-700">
               <p>
-                Prodalign forms, trains, and mentors a dedicated team of
-                students within a college. This team works as an{" "}
-                <strong>external engineering group</strong>, supported
-                closely by Prodalign mentors to ensure structure,
-                learning, and delivery.
-              </p>
-              <p>
-                Companies don't manage students directly.{" "}
+                Companies need not manage students directly.{" "}
                 <strong>Prodalign does.</strong>
               </p>
             </div>
@@ -124,7 +119,7 @@ export function HiringPage() {
 
           <div className="bg-gray-50 p-8 rounded-lg">
             <h3 className="text-xl mb-6 text-gray-900">The result:</h3>
-            <div className="space-y-3">
+            <div className="space-y-3 ">
               <div className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 rounded-full bg-[#FC7802] mt-2 flex-shrink-0" />
                 <span className="text-gray-700">
@@ -155,9 +150,7 @@ export function HiringPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-8">
-            Eligibility to become a Partner
-          </h2>
+          <h2 className="text-3xl md:text-4xl mb-8">Eligibility to become a Partner</h2>
 
           <div className="bg-white border-2 border-gray-200 rounded-lg p-8 md:p-10 mb-6">
             <p className="text-gray-700 mb-6">
@@ -166,9 +159,8 @@ export function HiringPage() {
                 serious, product-oriented companies.
               </strong>
             </p>
-            <p className="text-gray-600 text-sm">
-              To be eligible, a company should meet the following
-              criteria:
+            <p className="text-gray-600 text-md">
+              To be eligible, a company should meet the following criteria:
             </p>
           </div>
 
@@ -213,8 +205,7 @@ export function HiringPage() {
               <CheckCircle className="w-5 h-5 text-[#FC7802] mt-0.5 flex-shrink-0" />
               <div>
                 <div className="text-gray-900 mb-1">
-                  Has senior technical leadership available for
-                  periodic review
+                  Has senior technical leadership available for periodic review
                 </div>
               </div>
             </div>
@@ -228,11 +219,6 @@ export function HiringPage() {
               </div>
             </div>
           </div>
-
-          <p className="text-gray-600 italic mt-6 pt-6 border-t border-gray-200">
-            Prodalign is selective by design. Not every company is a good
-            fit—and that's intentional.
-          </p>
         </motion.section>
 
         {/* What a Partner Gives */}
@@ -243,7 +229,7 @@ export function HiringPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-8">What a Partner needs to give</h2>
+          <h2 className="text-3xl md:text-4xl mb-8">What a Partner needs to give</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
             {/* Problem Definition */}
@@ -281,8 +267,7 @@ export function HiringPage() {
                   </div>
                 </div>
                 <p className="text-gray-600 text-sm italic pt-4">
-                  These should be important but not mission-critical
-                  problems.
+                  These should be important but not mission-critical problems.
                 </p>
               </div>
             </div>
@@ -306,8 +291,8 @@ export function HiringPage() {
                     ~90 min/month
                   </div>
                   <div className="text-sm text-gray-600">
-                    Preferably from senior engineers (SDE-IV+),
-                    engineering managers, or tech leads
+                    Preferably from senior engineers (SDE-IV+), engineering
+                    managers, or tech leads
                   </div>
                 </div>
                 <p className="text-gray-700 mb-2">This time is used for:</p>
@@ -329,7 +314,7 @@ export function HiringPage() {
           transition={{ duration: 0.8 }}
           className="mb-24 bg-gray-50 p-10 md:p-12 rounded-lg"
         >
-          <h2 className="text-4xl mb-10">What a Partner gets</h2>
+          <h2 className="text-3xl md:text-4xl mb-10">What a Partner gets</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white p-6 rounded-lg border border-gray-200">
@@ -349,8 +334,8 @@ export function HiringPage() {
               </div>
               <h3 className="text-xl mb-3">Mentored Execution</h3>
               <p className="text-gray-600">
-                Prodalign mentors oversee training, structure, and
-                delivery quality.
+                Prodalign mentors oversee training, structure, and delivery
+                quality.
               </p>
             </div>
 
@@ -370,8 +355,8 @@ export function HiringPage() {
               </div>
               <h3 className="text-xl mb-3">Hiring Optionality</h3>
               <p className="text-gray-600">
-                Evaluate talent with hands-on domain experience. Hiring
-                is possible—but never compulsory.
+                Evaluate talent with hands-on domain experience. Hiring is
+                possible, but never compulsory.
               </p>
             </div>
           </div>
@@ -382,7 +367,7 @@ export function HiringPage() {
         </motion.section>
 
         {/* Compensation */}
-        <motion.section
+        {/* <motion.section
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -450,7 +435,7 @@ export function HiringPage() {
           <p className="text-gray-600 text-sm mt-6 italic">
             Transparency is mandatory. Exploitation is not tolerated.
           </p>
-        </motion.section>
+        </motion.section> */}
 
         {/* Who Partner is NOT for */}
         <motion.section
@@ -460,7 +445,7 @@ export function HiringPage() {
           transition={{ duration: 0.8 }}
           className="mb-24"
         >
-          <h2 className="text-4xl mb-8">Who Partner is not for</h2>
+          <h2 className="text-3xl md:text-4xl mb-8">Who Partner is not for</h2>
 
           <div className="bg-gray-50 p-8 md:p-10 rounded-lg">
             <p className="text-gray-700 mb-6">
@@ -527,9 +512,7 @@ export function HiringPage() {
           transition={{ duration: 0.8 }}
           className="mb-24 bg-gray-50 p-10 md:p-12 rounded-lg"
         >
-          <h2 className="text-4xl mb-8">
-            Why companies choose Prodalign
-          </h2>
+          <h2 className="text-3xl md:text-4xl mb-8">Why companies choose Prodalign</h2>
 
           <div className="space-y-4">
             <div className="flex items-start gap-4">
@@ -578,13 +561,13 @@ export function HiringPage() {
           transition={{ duration: 0.8 }}
           className="text-center border-t border-gray-200 pt-12"
         >
-          <h2 className="text-3xl mb-4">
+          <h2 className="text-2xl md:text-3xl mb-4">
             Prodalign Partner isn't about speed or scale.
           </h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            It's about building trust—slowly and deliberately. If your
-            company values thoughtful execution and long-term talent
-            growth, we're open to a conversation.
+            It's about building trust, slowly and deliberately. If your company
+            values thoughtful execution and long-term talent growth, we're open
+            to a conversation.
           </p>
           <Link
             to="/contact"
